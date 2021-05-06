@@ -9,19 +9,19 @@ pipeline{
     
 
     stages{
-        stage(‘build){
+        stage('build'){
             steps{
-                sh ’npm install’                
+                sh 'npm install'                
             }
         }
         stage('test'){
             steps{
-                sh ‘npm test’
+                sh 'npm test'
             }
         }
-        stage(‘package’){
+        stage('package'){
             steps{
-                sh ‘npm run package’
+                sh 'npm run package'
             }
         }
     }
